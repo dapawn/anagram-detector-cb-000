@@ -1,5 +1,5 @@
 # Your code goes here!
-class Anagram 
+class Anagram
 
   def initialize(word)
     @word = word
@@ -8,6 +8,6 @@ class Anagram
   attr_accessor :words, :word
 
   def match(words)
-    words.collect {|w| w.split("").sort == word.split("").sort } 
+    words.collect {|w| w.split("").sort == word.split("").sort }
   end
 end
