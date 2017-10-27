@@ -8,6 +8,6 @@ class Anagram
   attr_accessor :words, :word
 
   def match(words)
-    words.collect {|w| w.split("").sort == word.split("").sort }
+    words.select {|w| w.split("").sort == word.split("").sort }
   end
 end
